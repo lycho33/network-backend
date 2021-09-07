@@ -1,3 +1,3 @@
 class Teacher < ApplicationRecord
-    has_many :products
+    has_many :events
 end

@@ -28,32 +28,26 @@ teacher_3 = Teacher.create(
     website_url: "studio_website.com", 
     category: "faculty")
 
-
-teacher_1.save
-teacher_2.save
-teacher_3.save
-
-
-Event.create(
+teacher_1.events.create(
     name: "Master Course 2021",
     date: Faker::Date.forward,
     location: Faker::Address.city,
     category: "MasterClass",
-    teacher_id: teacher_1
 )
 
-Event.create(
+teacher_2.events.create(
     name: "Recital",
     date: Faker::Date.forward,
     location: Faker::Address.city,
     category: "Concert",
-    teacher_id: teacher_2
 )
-Event.create(
+teacher_3.events.create(
     name: "2022 Music Festival",
     date: Faker::Date.forward,
     location: Faker::Address.city,
     category: "Summer Festival",
-    teacher_id: teacher_3
 )
 
+teacher_1.save
+teacher_2.save
+teacher_3.save
