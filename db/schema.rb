@@ -35,6 +35,9 @@ ActiveRecord::Schema.define(version: 2021_09_07_211235) do
     t.string "biography"
     t.string "publications"
     t.string "category"
+    t.string "city"
+    t.string "state"
+    t.string "country"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

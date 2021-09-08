@@ -10,6 +10,9 @@ class CreateTeachers < ActiveRecord::Migration[6.1]
       t.string :biography
       t.string :publications
       t.string :category
+      t.string :city
+      t.string :state
+      t.string :country
 
       t.timestamps
     end
