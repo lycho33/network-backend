@@ -5,7 +5,7 @@ class TeachersController < ApplicationController
   def index
     teachers = Teacher.all
 
-    render json: teachers, include: :events
+    render json: teachers
   end
 
   # GET /teachers/1
