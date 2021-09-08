@@ -1,4 +1,4 @@
 class TeacherSerializer < ActiveModel::Serializer
-  attributes :id, :name, :title, :department, :email, :website_url, :biography, :publications, :category
+  attributes :id, :name, :title, :department, :email, :website_url, :biography, :publications, :category, :image
   has_many :events
 end

@@ -11,6 +11,7 @@ teacher_1 = Teacher.create(
     title: "Professor of Music", 
     department: "Ballet", 
     email: Faker::Internet.email , 
+    image: "https://thumbs.dreamstime.com/b/young-woman-avatar-cartoon-character-profile-picture-young-brunette-woman-profile-picture-avatar-cartoon-character-vector-149657293.jpg",
     website_url: "studio_website.com", 
     category: "faculty")
 teacher_2 = Teacher.create(
@@ -18,6 +19,7 @@ teacher_2 = Teacher.create(
     title: "Professor of Music", 
     department: "Harp", 
     email: Faker::Internet.email, 
+    image: "https://cdn.xxl.thumbs.canstockphoto.com/young-man-avatar-cartoon-character-profile-picture-young-man-wearing-a-blue-t-shirt-avatar-cartoon-illustration_csp70134228.jpg",
     website_url: "studio_website.com", 
     category: "faculty")
 teacher_3 = Teacher.create(
@@ -25,6 +27,7 @@ teacher_3 = Teacher.create(
     title: "Professor of Music", 
     department: "Historical Performance", 
     email: Faker::Internet.email, 
+    image: "https://www.leadgenfinder.com/wp-content/uploads/2020/11/pic2.jpg",
     website_url: "studio_website.com", 
     category: "faculty")
 
