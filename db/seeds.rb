@@ -43,21 +43,27 @@ teacher_3 = Teacher.create(
 teacher_1.events.create(
     name: "Master Course 2021",
     date: Faker::Date.forward,
-    location: Faker::Address.city,
-    category: "MasterClass",
+    city: "New York City",
+    state: "New York",
+    country: "USA",
+    category: "MasterClass"
 )
 
 teacher_2.events.create(
     name: "Recital",
     date: Faker::Date.forward,
-    location: Faker::Address.city,
-    category: "Concert",
+    city: "Los Angeles",
+    state: "California",
+    country: "USA",
+    category: "Concert"
 )
 teacher_3.events.create(
     name: "2022 Music Festival",
     date: Faker::Date.forward,
-    location: Faker::Address.city,
-    category: "Summer Festival",
+    city: "Dallas",
+    state: "Texas",
+    country: "USA",
+    category: "Summer Festival"
 )
 
 teacher_1.save
