@@ -19,7 +19,6 @@ class EventsController < ApplicationController
     if @event.save
       render json: @event, status: :created, location: @event
     else
-      byebug
       render json: @event.errors, status: :unprocessable_entity
     end
   end
