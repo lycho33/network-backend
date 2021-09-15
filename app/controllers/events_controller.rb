@@ -15,9 +15,11 @@ class EventsController < ApplicationController
 
   # POST /events
   def create
-    @event = Event.new(event_params)
+    byebug
+    @teacher = Teacher.find_by_id(params[:teacher_id])
+    @event = Event.build(event_params)
     if @event.save
-      render json: @event, status: :created, location: @event
+      render json: @event, status: :created
     else
       render json: @event.errors, status: :unprocessable_entity
     end
