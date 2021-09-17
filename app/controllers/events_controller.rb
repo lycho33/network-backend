@@ -15,9 +15,8 @@ class EventsController < ApplicationController
 
   # POST /events
   def create
-    byebug
     @teacher = Teacher.find_by_id(params[:teacher_id])
-    @event = Event.build(event_params)
+    @event = Event.new(event_params)
     if @event.save
       render json: @event, status: :created
     else
